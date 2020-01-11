@@ -25,7 +25,6 @@ try:
 ### checks every byte and turns the number to a hex string
     for byte in dump:
         hex_byte = (hex(byte))
-        #print (hex_byte)
         hex_byte = "\\"+(hex_byte[1:])
         if len(hex_byte)==3:
             hex_byte = hex_byte[:2]+"0"+hex_byte[2:3]
@@ -48,4 +47,4 @@ except FileNotFoundError:
 
 ### author: capsec
 ### Friday 03/01/2020
-### email capsec@protonmail.com
+### twitter : capsec1
